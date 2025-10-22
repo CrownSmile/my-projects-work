@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my portfolio website">
+    <meta name="author" content="Oluwatobiloba"> 
+    <title>Portfolio</title>
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon" >
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="my logo" class="logo" width="500" height="500" title="This is a logo">
+        <p class="name">G.G.E Tiling</p>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+    <main>
+        <article id="home" class="home">
+                <h2>Taking it to next level!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem quibusdam vel accusantium quae similique?<br> Ipsam modi veritatis numquam cupiditate rerum, <br> hic in ab, sit voluptas, ad ea quisquam laboriosam consectetur!</p>
+                <div class="btn">
+                    <button>Download CV</button>
+                    <button>Explore</button>
+                </div>
+        </article>
+        <article id="bio" class="bio">
+            <div><img src="img/ed4.jpg" class="profile" width="660" height="924"></div>
+            <div>
+                <h2>Bio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Pariatur perspiciatis earum error aperiam dolorem quae, excepturi esse minima doloremque mollitia quam odit impedit.</p>
+                <p>Id sit incidunt veritatis ut maiores provident.</p>
+            </div>
+        </article>
+        <article id="projects" class="projects"> 
+            <h2>Projects</h2>
+            <div class="pro1">
+                <img src="img/pj4.jpeg" alt="project" width="576" height="384">
+                <h3>html</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+            </div>
+            <div class="pro2">
+                <img src="img/pj1.jpeg" alt="project" width="576" height="402">
+                <h3>css</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+            </div>    
+            <div class="pro3">
+                <img src="img/pj2.jpeg" alt="" width="576" height="324">
+                <h3>javascript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+            </div>
+            <div class="pro4">
+                <img src="img/pj3.jpeg" alt="project" width="678" height="452">
+                <h3>ract js</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+            </div>
+            <!-- <div><img src="img/pj4 - 2025-09-22T165935.330.jpg.webp" alt="project" width="1200" height="628"></div> -->
+        </article>
+        <article id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>I'd love to hear from you!</p>
+            <form action="" method="post">
+                <fieldset>
+                        <legend>Message</legend>
+                    <p>
+                        <label for="text">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="john doe" autocomplete="on" required autofocus> 
+                    </p>
+                    <p>
+                        <label for="text">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="john doe" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="tel" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>Facebook <a href=""></a></p>
+        <p>IG <a href=""></a></p>
+        <p>Whatsapp <a href=""></a></p>
+    </footer>    
+</body>
+</html>
