@@ -5,8 +5,13 @@
 }
 
 body{
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-color: burlywood;
+    color: antiquewhite;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
 }

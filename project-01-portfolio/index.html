@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
-    <header>
-        <img src="img/Logo.png" alt="my logo" class="logo" width="500" height="500" title="This is a logo">
-        <p class="name">G.G.E Tiling</p>
-        <nav>
+    <header class="header">
+        <!-- <img src="img/Logo.png" alt="my logo" class="logo" width="678" height="452" title="This is a logo"> -->
+        <a href="#" class="logo">Tobby</a>
+
+        <nav class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#bio">Bio</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -22,75 +23,88 @@
     </header>
     <main>
         <article id="home" class="home">
-                <h2>Taking it to next level!</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatem quibusdam vel accusantium quae similique?<br> Ipsam modi veritatis numquam cupiditate rerum, <br> hic in ab, sit voluptas, ad ea quisquam laboriosam consectetur!</p>
-                <div class="btn">
-                    <button>Download CV</button>
-                    <button>Explore</button>
+            <div class="home-content">
+                <h1>Hi, I'm Oluwatobiloba Timothy</h1>
+                <p>A Passionate Web Developer</p>
+                <div class="CTA">
+                    <button>View My Work</button>
+                    <button>Contact Me</button>
                 </div>
+            </div>    
         </article>
         <article id="bio" class="bio">
-            <div><img src="img/ed4.jpg" class="profile" width="660" height="924"></div>
-            <div>
-                <h2>Bio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Pariatur perspiciatis earum error aperiam dolorem quae, excepturi esse minima doloremque mollitia quam odit impedit.</p>
-                <p>Id sit incidunt veritatis ut maiores provident.</p>
-            </div>
+            <div class="bio-content">
+                <h2>About Me</h2>
+                <div class="about">
+                    <p>I’m a web developer with a love<br>for clean design and modern web technologies.<br> I enjoy buil
+                    responsive,<br> user-friendly websites and<br> digital experiences.</p>
+                    <div><img src="img/ed4.jpg" class="profile" width="660" height="924"></div>
+                </div>
         </article>
-        <article id="projects" class="projects"> 
-            <h2>Projects</h2>
-            <div class="pro1">
+        <article id="projects" class="projects">
+             <h2>Projects</h2> 
+            <div class="projects-content">
+                <div class="pro1">
                 <img src="img/pj4.jpeg" alt="project" width="576" height="384">
-                <h3>html</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+                    <div class="text">
+                        <h3>html</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero
+                        <br> Corrupti ex aliquid omnis suscipit</p>
+                        <button>View Project</button>
+                    </div>
             </div>
-            <div class="pro2">
-                <img src="img/pj1.jpeg" alt="project" width="576" height="402">
-                <h3>css</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+                <div class="pro2">
+                    <img src="img/pj1.jpeg" alt="project" width="576" height="402">
+                    <div class="text">
+                        <h3>css</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero
+                        <br> Corrupti ex aliquid omnis suscipi</p>
+                        <button>View Project</button>
+                    </div>
             </div>    
-            <div class="pro3">
-                <img src="img/pj2.jpeg" alt="" width="576" height="324">
-                <h3>javascript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
+                <div class="pro3">
+                    <img src="img/pj4.jpeg" alt="project" width="576" height="384">
+                    <div class="text">
+                        <h3>javascript</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero
+                        <br> Corrupti ex aliquid omnis suscipit</p>
+                        <button>View Project</button>
+                    </div>
             </div>
-            <div class="pro4">
-                <img src="img/pj3.jpeg" alt="project" width="678" height="452">
-                <h3>ract js</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum impedit ab totam libero id? <br> Corrupti ex aliquid omnis suscipit <br> veritatis facilis consequuntur architecto eligendi, <br> nesciunt quidem ab deleniti tempora ea!</p>
-            </div>
-            <!-- <div><img src="img/pj4 - 2025-09-22T165935.330.jpg.webp" alt="project" width="1200" height="628"></div> -->
         </article>
         <article id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <p>I'd love to hear from you!</p>
-            <form action="" method="post">
-                <fieldset>
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <p>I'd love to hear from you!</p>
+                <form action="" method="post">
+                    <fieldset>
                         <legend>Message</legend>
-                    <p>
-                        <label for="text">First Name:</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="john doe" autocomplete="on" required autofocus> 
-                    </p>
-                    <p>
-                        <label for="text">Last Name:</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="john doe" autocomplete="on" required>
-                    </p>
-                    <p>
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="tel" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-                    </p>
-                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
-                </fieldset>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </form>
+                        <input type="text" name="name" id="name" placeholder="Name"><br>
+                        <input type="email" name="email" id="email" placeholder="Email"><br>
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Type Your Message"></textarea>
+                    </fieldset>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                </form>
+            </div>
         </article>
     </main>
+    <hr>
     <footer>
-        <p>Facebook <a href=""></a></p>
-        <p>IG <a href=""></a></p>
-        <p>Whatsapp <a href=""></a></p>
+        <div class="copyright">&lt;&lt;&lt; &copy; Timohty O. &gt;&gt;&gt;</div>
+        <div class="social">
+            <h4>Social links</h4>
+            <a href="#">Facebook</a><br>
+            <a href="#">IG</a><br>
+            <a href="#">Whatsapp</a><br>
+        </div>
+        <div class="navibar">
+            <h4>Navbar</h4>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
     </footer>    
 </body>
 </html>

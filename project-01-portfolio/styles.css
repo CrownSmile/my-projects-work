@@ -3,251 +3,511 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* .box{
-    background-color: aqua;
-    color: white;
-    font-size: 2rem;
-    padding: 0.5rem;
-} */
 
 body{
-    height: 100vw;
-    background-color: lightgreen;
-    align-items: center;
-    justify-content: center;
-}
-article{
-    height: 50vw;
+    padding: 40px 10px;
+    height: 100vh;
 }
 
-header{
-    background-color: hsla(0, 0%, 0%, 0.733);
-    height: 100px;
-    width: 100%;
-    display: flex;
+.header{
     position: fixed;
-}
-nav{
-    margin-left: 400px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: #2E2E2E;
     display: flex;
-    align-items: end;
-    gap: 60px;
-    
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-li, a{
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-a:hover, :focus{
-    color: hsla(0, 14%, 95%, 0.808);   
-}
-main{
-    padding: 100px 10px;
-}
 .logo{
-    padding: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-}
-.name{
-    margin-top: 60px;
-    font-size: 35px;
-    color: white;
-    font-family: serif;
-}
-.home{
-    border-bottom: 3px solid black;
-    padding: 30px;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-}
-.home h2{
-    font-size: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 100px;
-    padding-top: 40px;
-}
-.home p{
+    position: relative;
+    text-decoration: none;
     font-size: 25px;
-    text-align: center;
+    color: white;
+    font-weight: 600;
 }
-.bio{
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar{
+    display: inline-flex;
+    font-size: 25px;
+    list-style: none;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: blue;
+}
+
+/* HOME/HERO DESIGN AND LAYOUT BEGIN */
+
+.home{
+    background-color: #F8F9FA;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    height: 100vh;
     display: flex;
-    padding: 50px;
-    gap: 50px;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px solid black;
+    margin-top: 30px;
 }
-.profile{
-    width: 300px;
-    height: 400px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 60px;
+.home-content{
+    color: #2E2E2E;
 }
-h2{
+.home-content h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.home-content p{
     font-size: 30px;
+    margin-bottom: 20px;
+}
+.home-content .CTA{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 30px;
+}
+.CTA button{
+    background-color: #2C73D2;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.CTA button:hover{
+    background-color: #F39C12;
+    box-shadow: 2px 2px 6px 0px #2C73D2;
+    transition: .3s;
+}
+
+/* HOME/HERO DESIGN AND LAYOUT ENDS */
+
+/* ABOUT DESIGN AND LAYOUT BEGINS */
+
+.bio{
+    background-color: lightgray;
+    height: 100vh;
+}
+.bio-content{
+    color: #2E2E2E;
+}
+.bio-content h2{
+    font-size: 35px;
+    color: blue;
     text-align: center;
 }
-.btn{
+.bio-content .about{
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: center;
-    gap: 50px;
 }
-.btn button{
-    left: 30px;
-    padding: 15px;
-    margin-top: 50px;
-    border-radius: 20px;
-    background-color: hsla(240, 100%, 50%, 0.466);
-    color: black;
-    font-size: 20px;
-    border: none;
+.about p{
+    font-size: 25px;
+    color: #2E2E2E;
 }
-.btn button:hover, :focus{
-    background-color: hsla(240, 100%, 50%, 0.842);
-    transition: 2s;
-    color: white;
+.about .profile{
+    margin-top: 60px;
+    height: 300px;
+    width: 300px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
+/* ABOUT DESIGN AND LAYOUT ENDS */
+
+/* PROJECTS DESIGN AND LAYOUT BEGINS */
 .projects{
+    margin-top: 50px;
+}
+.projects .projects-content{
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 20px 10px;
-    margin-left: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 .projects h2{
-    background-color: aliceblue;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    font-size: 35px;
+    color: blue;
+    font-weight: 600;
+    text-align: center;
 }
-.pro1{
+.projects-content .pro1{
+    background: white;
+    border: 1px solid orange;
     border-radius: 20px;
-    background-color: black;
+    text-align: center;
+    width: 350px;
+}
+.projects-content .pro1:hover{
+    box-shadow: 2px 2px 6px 0px #2E2E2E;
+    transition: .4s;
+}
+.projects-content .pro1 img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.projects-content .pro1 button{
     color: white;
-    width: 40vw;
-    height: 100vh;
-}
-.pro1:hover{
-    border: 5px solid green;
-}
-.pro1 h3{
-    text-transform: uppercase;
-    font-size: 25px;
-    padding: 20px;
-}
-.pro1 p{
-    font-size: 20px;
-    padding: 20px;
-}
-.pro1 img{
-    margin: 20px;
-    border-radius: 30px;
-    width: 500px;
-    height: 300px;  
-}
-.pro2{
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    width: 40vw;
-    height: 100vh;
-}
-.pro2:hover{
-    border: 5px solid green;
-}
-.pro2 h3{
-    text-transform: uppercase;
-    font-size: 25px;
-    padding: 20px;
-}
-.pro2 p{
-    font-size: 20px;
-    padding: 20px;
-}
-.pro2 img{
-    margin: 20px;
-    border-radius: 30px;
-    width: 500px;
-    height: 300px;    
-}
-.pro3{
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    width: 40vw;
-    height: 100vh;
-}
-.pro3:hover{
-    border: 5px solid green;
-}
-.pro3 h3{
-    text-transform: uppercase;
-    font-size: 25px;
-    padding: 20px;
-}
-.pro3 p{
-    font-size: 20px;
-    padding: 20px;
-}
-.pro3 img{
-    margin: 20px;
-    border-radius: 30px;
-    width: 500px;
-    height: 300px;    
-}
-.pro4{
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    width: 40vw;
-    height: 100vh;
-}
-.pro4:hover{
-    border: 5px solid green;
-}
-.pro4 h3{
-    text-transform: uppercase;
-    font-size: 25px;
-    padding: 20px;
-}
-.pro4 p{
-    font-size: 20px;
-    padding: 20px;
-}
-.pro4 img{
-    margin: 20px;
-    border-radius: 30px;
-    width: 500px;
-    height: 300px;    
-}
-
-.contact{
-    margin-top: 800px;
-    align-items: center;
-    justify-content: center;
-    background-color: hsla(0, 0%, 0%, 0.733);
-}
-.contact p{
-    font-size: 30px;
-}
-fieldset legend{
-    font-size: 30px;
-}
-
-fieldset input{
-    height: 40px;
-    width: 40%;
-    border-radius: 2px;
+    background-color: #2C73D2;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
     border: none;
 }
-fieldset placeholder{
-    
+.projects-content .pro1 button:hover{
+    background-color: #F39C12;
+    transition: .3s;
+}
+.pro1 .text h3{
+    font-size: 25px;
+    color: blue;
+    text-transform: uppercase;
+}
+.pro1 .text p{
+    text-align: start;
+    padding: 10px;
+}
+.projects-content .pro2{
+    background: white;
+    border: 1px solid orange;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+}
+.projects-content .pro2:hover{
+    box-shadow: 2px 2px 6px 0px #2E2E2E;
+    transition: .4s;
+}
+.projects-content .pro2 img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.projects-content .pro2 button{
+    color: white;
+    background-color: #2C73D2;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+}
+.projects-content .pro2 button:hover{
+    background-color: #F39C12;
+    transition: .3s;
+}
+.pro2 .text h3{
+    font-size: 25px;
+    color: blue;
+    text-transform: uppercase;
+}
+.pro2 .text p{
+    text-align: start;
+    padding: 10px;
+}
+
+.projects-content .pro3{
+    background: white;
+    border: 1px solid orange;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+}
+.projects-content .pro3:hover{
+    box-shadow: 2px 2px 6px 0px #2E2E2E;
+    transition: .4s;
+}
+.projects-content .pro3 img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.projects-content .pro3 button{
+    color: white;
+    background-color: #2C73D2;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+}
+.projects-content .pro3 button:hover{
+    background-color: #F39C12;
+    transition: .3s;
+}
+.pro3 .text h3{
+    font-size: 25px;
+    color: blue;
+    text-transform: uppercase;
+}
+.pro3 .text p{
+    text-align: start;
+    padding: 10px;
+}
+/* PROJECTS DESIGN AND LAYOUT ENDS */
+
+/* CONTACT DESIGN AND LAYOUT BEGINS  */
+
+.contact{
+    background-color: lightgray;
+    margin-top: 50px;
+}
+.contact-content h2{
+   font-size: 35px;
+    color: blue;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+.contact-content p{
+    font-size: 20px;
+    color: #2E2E2E;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-content form{
+    width: 50%;
+    padding-left: 40px;
+}
+.contact-content fieldset{
+    padding: 20px;
+    border-radius: 10px;
+}
+fieldset input{
+    height: 40px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+fieldset textarea{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+form button{
+     color: white;
+    background-color: #2C73D2;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+}
+form button:hover{
+    background-color: #F39C12;
+    transition: .3s;
+}
+/* CONTACT DESIGN AND LAYOUT ENDS */
+/* FOOTER DESIGN AND LAYOUT BEGIN */
+footer{
+    background-color: #2E2E2E;
+    color: white;
+    display: flex;
+    padding: 20px;
+    height: 20vh;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 20px;
+}
+footer .social h4{
+    color: #F39C12;
+    font-size: 20px;
+    margin-left: 80px;
+}
+footer .social a{
+   margin-left: 80px;
+   font-size: 17px;
+}
+footer .navibar h4{
+    color: #F39C12;
+    font-size: 20px;
+    margin-left: 80px;
+}
+footer .navibar a{
+    margin-left: 80px;
+   font-size: 17px;
+   flex-direction: column;
+   display: flex;
+}
+/* FOOTER DESIGN AND LAYOUT ENDS */
+
+/* MEDIA QUERY AND RESPONSIVENESS */
+/* MOBILE SMALL SCREEN */
+@media (min-width: 150px) and (max-width: 425px) {
+    body{
+        height: 100vh;
+    }
+    .home{
+        background-color: #2E2E2E;
+        width: 550px;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin-top: 50px;
+        height: 150vh;
+    }  
+    .home-content{
+        color: #F8F9FA;
+    }
+    .home-content h1{
+        font-size: 80px;
+    }
+    .home-content p{
+        font-size: 40px;
+    }
+    .home-content .CTA{
+        display: flex;
+        flex-direction: column;
+    }
+    .CTA button{
+        background-color: #2C73D2;
+        color: white;
+        font-size: 35px;
+        padding: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 400px;
+    }
+    .CTA button:hover{
+        background-color: #F39C12;
+        box-shadow: 2px 2px 6px 0px #2C73D2;
+        transition: .3s;
+    } 
+    .bio{
+        width: 540px;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin-top: 20px;
+        height: 150vh;
+    }
+    .bio-content .about{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .bio-content h2{
+        font-size: 50px;
+    }
+    .bio-content p{
+        font-size: 35px;
+    }
+    .about .profile{
+        width: 400px;
+        height: 300px;
+    }
+    .projects .projects-content{
+        display: block;
+        padding: 10px 20px;
+    }
+    .projects h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    .projects-content .pro1{
+        width: 500px;
+        margin-bottom: 10px;
+    }
+    .pro1 .text h3{
+        font-size: 35px;
+    } 
+    .pro1 .text p{
+        font-size: 30px;
+    }
+    .projects-content .pro1 button{
+        width: 90%;
+        font-size: 30px;
+    }
+    .projects-content .pro2{
+        width: 500px;
+        margin-top: 30px;
+    }
+    .pro2 .text h3{
+        font-size: 35px;
+    } 
+    .pro2 .text p{
+        font-size: 30px;
+    }
+    .projects-content .pro2 button{
+        width: 90%;
+        font-size: 30px;
+    }
+    .projects-content .pro3{
+        width: 500px;
+        margin-top: 30px;
+    }
+    .pro3 .text h3{
+        font-size: 35px;
+    } 
+    .pro3 .text p{
+        font-size: 30px;
+    }
+    .projects-content .pro3 button{
+        width: 90%;
+        font-size: 30px;
+    }
+    .contact{
+        width: 540px;
+    }
+    .contact-content h2{
+        font-size: 50px;
+    }
+    .contact-content p{
+        font-size: 30px;
+    }
+    .contact-content form{
+        width: 100%;
+        padding: 10px;
+        font-size: 30px;
+    }
+    fieldset input{
+        font-size: 30px;
+        height: 60px;
+    }
+    textarea{
+        font-size: 100px;
+    }
+    form button{
+        font-size: 40px;
+    }
+    footer{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        height: 50vh;
+        padding: 10px;
+    }
+    footer .copyright{
+        font-size: 40px;
+    }
+    footer .social a{
+        font-size: 30px;
+    }
+    footer .navibar{
+        
+    }
 }
